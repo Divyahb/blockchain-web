@@ -1,0 +1,17 @@
+.manage-identity {
+    padding: 20px;
+}
+
+.manage-identity h1 {
+    font-family: 'NoaLight';
+}
+
+.manage-identity-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.manage-identity-form-save {
+    flex: 0;
+    padding: 10px;
+}

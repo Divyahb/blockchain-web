@@ -1,0 +1,15 @@
+<mat-sidenav-container>
+  <mat-sidenav mode="push" [opened]="toggleSideNav">
+    <img src="/assets/img/logo-144.png" alt="KLM Royal Dutch Airlines" class="klm_logo">
+    <mat-list>
+      <mat-list-item><a routerLink="" (click)="toggleNavigation()">Manage Identity</a></mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+
+  <mat-toolbar color="primary">
+    <mat-icon (click)="toggleNavigation()" class="home_btn" style="padding-right: 10px;" >home</mat-icon>
+    <span>Manage Identity</span>
+  </mat-toolbar>
+
+  <router-outlet></router-outlet>
+</mat-sidenav-container>

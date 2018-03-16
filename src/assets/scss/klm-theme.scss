@@ -1,0 +1,77 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$primary: (
+        50: #eef7fc, // light blue
+        100: #c2deea, // cloud blue
+        200: #5eb6e4, // sky blue
+        300: #1cc1ff,
+        400: #00b7fd,
+        500: #00a1de, // blue
+        600: #008bbf,
+        700: #0075a1,
+        800: #005b82, // ocean blue
+        900: #003145, // night blue
+        A100: #e8f9ff,
+        A200: #9ce4ff,
+        A400: #00b7fd,
+        A700: #0075a1,
+        A900: #1c1d46,
+        contrast: (
+                50: $black-87-opacity,
+                100: $black-87-opacity,
+                200: $black-87-opacity,
+                300: white,
+                400: white,
+                500: $white-87-opacity,
+                600: $white-87-opacity,
+                700: $white-87-opacity,
+                800: $white-87-opacity,
+                900: $white-87-opacity,
+                A100: $black-87-opacity,
+                A200: white,
+                A400: white,
+                A700: $white-87-opacity,
+        )
+);
+
+$accent: (
+        50: #ffffff,
+        100: #f8ddc9,
+        200: #f2bd98,
+        300: #ea9558,
+        400: #e6833d,
+        500: #e37222,
+        600: #cc641a,
+        700: #b15716,
+        800: #964913,
+        900: #7b3c10,
+        A100: #ffffff,
+        A200: #f8ddc9,
+        A400: #e6833d,
+        A700: #b15716,
+        contrast: (
+                50: $black-87-opacity,
+                100: $black-87-opacity,
+                200: $black-87-opacity,
+                300: $black-87-opacity,
+                400: $black-87-opacity,
+                500: white,
+                600: white,
+                700: $white-87-opacity,
+                800: $white-87-opacity,
+                900: $white-87-opacity,
+                A100: $black-87-opacity,
+                A200: white,
+                A400: white,
+                A700: white,
+        )
+);
+
+$lagger-primary: mat-palette($primary);
+$lagger-accent:  mat-palette($accent);
+$lagger-warn:    mat-palette($mat-red);
+
+$lagger-theme: mat-light-theme($lagger-primary, $lagger-accent, $lagger-warn);
+
+@include angular-material-theme($lagger-theme);

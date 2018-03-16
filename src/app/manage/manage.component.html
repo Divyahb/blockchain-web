@@ -1,0 +1,17 @@
+<div class="manage-identity">
+    <h1>Manage Identity</h1>
+
+    <form [formGroup]="form" class="manage-identity-form">
+        <mat-form-field>
+            <input matInput placeholder="Name" formControlName="name">
+        </mat-form-field>
+
+        <mat-form-field >
+            <input matInput placeholder="Flying Blue Number" formControlName="flyingBlueNumber">
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" class="manage-identitiy-form-save" (click)="onSubmit()">
+            Save
+        </button>
+    </form>
+</div>
